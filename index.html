@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kemigisa Juliet | Web Designer & Developer</title>
+  <title>Kemigisa Juliet | Full Stack Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +11,9 @@
   <header>
     <div class="header-content">
       <h1>Kemigisa Juliet</h1>
-      <p>Creative Web Designer & Frontend Developer</p>
+      <p>Creative Full Stack Developer</p>
     </div>
   </header>
-
   <nav>
     <a href="#home"><i class="fas fa-home"></i> Home</a>
     <a href="#about"><i class="fas fa-user"></i> About</a>
@@ -28,25 +27,28 @@
       <div class="hero-text">
         <h2>Welcome to My Portfolio</h2>
         <p>
-          Hi there! I'm Kemigisa Juliet, a passionate web designer who turns ideas into beautifully crafted websites. Explore my work, skills, and let's connect.
+          Hi there! I'm Kemigisa Juliet, a passionate Full Stack Developer who turns ideas into beautifully crafted websites. Explore my work, skills, and let's connect.
         </p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn">Get in Touch</a>
+          <a href="#projects" class="btn btn-secondary">View My Work</a>
+        </div>
       </div>
       <div class="hero-image">
-        <img src="./gallery/JULIE KEN.png" alt="Kemigisa Juliet">
+        <div class="initials-placeholder">JKD</div>
       </div>
     </div>
   </section>
-
+  
   <section id="about">
     <h2><i class="fas fa-star"></i> About Me</h2>
     <div class="about-container">
       <div class="about-image">
-        <img src="./gallery/7n8KIDP6_400x400.jpg" alt="Kemigisa Juliet">
+        <div class="initials-placeholder circular">JKD</div>
       </div>
       <div class="about-text">
         <p>
-          I'm Kemigisa Juliet, a web designer based in Uganda. I specialize in creating clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. My mission is to design sites that not only look great but also offer seamless experiences for users.
+          I'm Kemigisa Juliet, a Full Stack Developer based in Uganda. I specialize in creating clean, responsive, and user-friendly websites using HTML, CSS, and React Javascript for frontend and Python (Flask) for backend development. My mission is to design sites that not only look great but also offer seamless experiences for users.
         </p>
         <p>
           I'm constantly learning and exploring new tools to stay ahead in this fast-changing industry.
@@ -57,81 +59,184 @@
       </div>
     </div>
   </section>
-
+  
   <section id="skills">
     <h2><i class="fas fa-laptop-code"></i> My Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <i class="fab fa-html5"></i>
         <h3>HTML5</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="95"></div>
+          <span class="skill-percent">95%</span>
+        </div>
         <p>Semantic markup & accessibility best practices.</p>
       </div>
       <div class="skill-card">
         <i class="fab fa-css3-alt"></i>
         <h3>CSS3</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="90"></div>
+          <span class="skill-percent">90%</span>
+        </div>
         <p>Responsive design, Flexbox, Grid, and animations.</p>
       </div>
       <div class="skill-card">
         <i class="fab fa-js"></i>
-        <h3>JavaScript</h3>
+        <h3>JavaScript (Vanilla)</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="85"></div>
+          <span class="skill-percent">85%</span>
+        </div>
         <p>ES6+, DOM manipulation, and basic React.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="80"></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <p>Building user interfaces with React, state management, and component lifecycle.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="85"></div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <p>Building web applications with Flask, REST APIs, and database integration.</p>
       </div>
       <div class="skill-card">
         <i class="fab fa-git-alt"></i>
         <h3>Git & GitHub</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="90"></div>
+          <span class="skill-percent">90%</span>
+        </div>
         <p>Version control and collaboration.</p>
       </div>
+      <div class="skill-card">
+        <i class="fab fa-figma"></i>
+        <h3>Figma Design</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="75"></div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <p>Visual design and prototyping.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-comments"></i>
+        <h3>Communication</h3>
+        <div class="skill-container">
+          <div class="skill-bar" data-skill="95"></div>
+          <span class="skill-percent">95%</span>
+        </div>
+        <p>Effective communication and collaboration in team environments.</p>
+      </div>
     </div>
   </section>
-
+  
   <section id="projects">
     <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
     <div class="projects-grid">
-      <div class="project-card">
-        <img src="./gallery/bookn.png" alt="Book Management System">
+      <div class="project-card" data-category="web">
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="./gallery/hometaste.png" alt="Taste Budz Homepage">
+            </div>
+            <div class="carousel-slide">
+              <img src="./gallery/menutaste.png" alt="Taste Budz Menu">
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
         <div class="project-info">
-          <h3>Book Management System</h3>
-          <p>A Book Management System where you can add, delete and read made in responsive design.</p>
-          <a href="./gallery/bookn.png" class="btn btn-small">View Project</a>
+          <h3>Taste Budz Restaurant Website</h3>
+          <p>A comprehensive restaurant website for a multi-branch establishment featuring online ordering, reservation system, and interactive menu. Built with React for the frontend and Python Flask for the backend to handle user data and orders.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <a href="https://tastebz.com/" class="btn btn-small" target="_blank">View Project</a>
         </div>
       </div>
-
-        <div class="project-card">
-        <img src="./gallery/book.png" alt="Book Management System">
+      
+      <div class="project-card" data-category="web">
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="./gallery/bookn.png" alt="Book Management System">
+            </div>
+            <div class="carousel-slide">
+              <img src="./gallery/book.png" alt="Book Search System">
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
         <div class="project-info">
           <h3>Book Management System</h3>
-          <p>A book Management system that allow you to search from the database any kind of book you wish to see</p>
-          <a href="./gallery/book.png" class="btn btn-small">View Project</a>
+          <p>A full-featured book management system allowing users to search, add, delete, and read books. Built with vanilla JavaScript for frontend interactions and React for components, with Python Flask backend for database operations.</p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>HTML</span>
+          </div>
+          <a href="./gallery/bookn.png" class="btn btn-small" target="_blank">View Project</a>
         </div>
-  
+      </div>
+      
+      <div class="project-card" data-category="design">
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="./gallery/flyer adm.jpg" alt="Women in Tech Flyer">
+            </div>
+            <div class="carousel-slide">
+              <img src="./gallery/cake fly copy.jpg" alt="Bakery Promotion Flyer">
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Graphic Design Projects</h3>
+          <p>A collection of professional graphic design work including promotional flyers for various businesses and events. Created using Photoshop with attention to branding and marketing effectiveness.</p>
+          <div class="project-tags">
+            <span>Photoshop</span>
+            <span>Graphic Design</span>
+            <span>Marketing</span>
+          </div>
+          <a href="./gallery/flyer adm.jpg" class="btn btn-small" target="_blank">View Project</a>
+        </div>
       </div>
     </div>
   </section>
-
   
-  <section id="projects">
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="./gallery/flyer adm.jpg" alt="Flyer">
-        <div class="project-info">
-          <h3>Photoshop Design</h3>
-          <p>A Photoshop Design for a flyer in call for all women intrested in computer scienc</p>
-          <a href="./gallery/flyer adm.jpg" class="btn btn-small">View Project</a>
-        </div>
-      </div>
-
-        <div class="project-card">
-        <img src="./gallery/cake fly copy.jpg" alt="Book Management System">
-        <div class="project-info">
-          <h3>Photoshop Design</h3>
-          <p>A Photoshop Design for an existing business advertising for their products</p>
-          <a href="./gallery/cake fly copy.jpg" class="btn btn-small">View Project</a>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
   <section id="contact">
     <h2><i class="fas fa-paper-plane"></i> Contact Me</h2>
     <div class="contact-container">
@@ -141,29 +246,54 @@
         <textarea placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/juliet-kemigisa-9a18b4335/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/Juliet-ken22"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://x.com/Juliejulyqueen"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://wa.me/+256753586929" target="_blank">
-      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-        </a>
-        <a href="tel:+256703658787">
-        <i class="fas fa-phone"></i> Call Me
-      </a>
-
-
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Location</h3>
+            <p>Kampala, Uganda</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>julietken972@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Phone</h3>
+            <p>+256 703658787</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/juliet-kemigisa-9a18b4335/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Juliet-ken22" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/Juliejulyqueen" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/+256753586929" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
     <p id="message"></p>
-  
   </section>
   
-
   <footer>
     <p>&copy; 2025 Kemigisa Juliet. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </footer>
-
+  
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
   <script src="script.js"></script>
 </body>
 </html>
