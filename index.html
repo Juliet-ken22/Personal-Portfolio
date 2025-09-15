@@ -238,46 +238,47 @@
   </section>
   
   <section id="contact">
-    <h2><i class="fas fa-paper-plane"></i> Contact Me</h2>
-    <div class="contact-container">
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
-      </form>
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h3>Location</h3>
-            <p>Kampala, Uganda</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h3>Email</h3>
-            <p>julietken972@gmail.com</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <h3>Phone</h3>
-            <p>+256 703658787</p>
-          </div>
-        </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/juliet-kemigisa-9a18b4335/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Juliet-ken22" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://x.com/Juliejulyqueen" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://wa.me/+256753586929" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <h2><i class="fas fa-paper-plane"></i> Contact Me</h2>
+  <div class="contact-container">
+    <form id="contact-form" action="https://formspree.io/f/mnnbydlb" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="hidden" name="_subject" value="New message from your portfolio">
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Location</h3>
+          <p>Kampala, Uganda</p>
         </div>
       </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p>julietken972@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h3>Phone</h3>
+          <p>+256 703658787</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/juliet-kemigisa-9a18b4335/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Juliet-ken22" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/Juliejulyqueen" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/+256753586929" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </div>
-    <p id="message"></p>
-  </section>
+  </div>
+  <p id="message"></p>
+</section>
   
   <footer>
     <p>&copy; 2025 Kemigisa Juliet. All rights reserved.</p>

@@ -2,20 +2,50 @@
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
   
+  const formData = new FormData(this);
   const messageEl = document.getElementById("message");
-  messageEl.textContent = "✅ Thank you for your message! I'll get back to you soon.";
+  
+  // Show loading message
+  messageEl.textContent = "⏳ Sending your message...";
   messageEl.style.color = "#2a52be";
   messageEl.style.textAlign = "center";
   messageEl.style.marginTop = "20px";
   messageEl.style.fontWeight = "500";
   
-  // Reset form
-  this.reset();
-  
-  // Hide message after 5 seconds
-  setTimeout(() => {
-    messageEl.textContent = "";
-  }, 5000);
+  fetch(this.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      // Success message
+      messageEl.textContent = "✅ Thank you for your message! I'll get back to you soon.";
+      messageEl.style.color = "#4caf50";
+      messageEl.style.textAlign = "center";
+      messageEl.style.marginTop = "20px";
+      messageEl.style.fontWeight = "500";
+      
+      // Reset form
+      this.reset();
+      
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        messageEl.textContent = "";
+      }, 5000);
+    } else {
+      // Error message
+      messageEl.textContent = "❌ Oops! There was a problem sending your message. Please try again later.";
+      messageEl.style.color = "#ff6b6b";
+    }
+  })
+  .catch(error => {
+    // Network error message
+    messageEl.textContent = "❌ Network error. Please check your connection and try again.";
+    messageEl.style.color = "#ff6b6b";
+  });
 });
 
 // Smooth scrolling for navigation links
