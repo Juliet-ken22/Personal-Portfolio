@@ -40,12 +40,14 @@
       </div>
       <div class="hero-stack">
         <span class="stack-pill">React</span>
+        <span class="stack-pill">Node.js</span>
         <span class="stack-pill">Python</span>
         <span class="stack-pill">Django</span>
         <span class="stack-pill">Flask</span>
         <span class="stack-pill">MySQL</span>
         <span class="stack-pill">Flutter</span>
         <span class="stack-pill">Dart</span>
+        <span class="stack-pill">TensorFlow</span>
         <span class="stack-pill">Git</span>
       </div>
     </div>
@@ -180,10 +182,14 @@
     </div>
 
     <div>
-      <p class="skills-group-title">Backend &amp; Data</p>
+      <p class="skills-group-title">Backend &amp; AI/ML</p>
       <div class="skill-row">
         <div>
           <div class="skill-item-label"><span>Python</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div>
+          <div class="skill-item-label"><span>Node.js</span><span>85%</span></div>
           <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
         </div>
         <div>
@@ -199,6 +205,10 @@
           <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
         </div>
         <div>
+          <div class="skill-item-label"><span>TensorFlow / scikit-learn</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+        <div>
           <div class="skill-item-label"><span>Git / GitHub</span><span>90%</span></div>
           <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
         </div>
@@ -209,6 +219,7 @@
         <span class="soft-tag">Adobe Photoshop</span>
         <span class="soft-tag">Figma</span>
         <span class="soft-tag">UI / UX Design</span>
+        <span class="soft-tag">Scratch</span>
         <span class="soft-tag">Problem Solving</span>
         <span class="soft-tag">Communication</span>
         <span class="soft-tag">Team Collaboration</span>
@@ -226,10 +237,40 @@
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="web">Web</button>
     <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="ai">AI / ML</button>
     <button class="filter-btn" data-filter="design">Design</button>
   </div>
 
   <div class="projects-grid">
+
+    <!-- LinkUp AI -->
+    <div class="proj-card" data-cat="ai">
+      <div class="proj-img">
+        <span class="proj-cat">AI / Hackathon</span>
+        <div class="carousel-wrap">
+          <div class="slide active"><img src="./gallery/linkup_ai.jpg" alt="LinkUp AI Event Safety Dashboard"></div>
+          <button class="c-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="c-next"><i class="fas fa-chevron-right"></i></button>
+          <div class="c-dots">
+            <button class="c-dot active"></button>
+          </div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-title">LinkUp AI — Event Safety B2B Platform (Winner)</p>
+        <p class="proj-desc">Award-winning B2B safety platform for events built at the Africa's Talking Hackathon. Features USSD emergency groups, Voice IVR automated alerts, and a real-time React dashboard with crowd heat maps and LLM incident categorization.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">Express</span>
+          <span class="proj-tag">PostgreSQL</span>
+          <span class="proj-tag">Redis</span>
+          <span class="proj-tag">Africa's Talking APIs</span>
+          <span class="proj-tag">OpenAI API</span>
+        </div>
+        <a href="https://github.com/Juliet-ken22" class="proj-link" target="_blank">View GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
 
     <!-- Taste Budz -->
     <div class="proj-card" data-cat="web">
@@ -256,6 +297,34 @@
           <span class="proj-tag">CSS</span>
         </div>
         <a href="https://tastebz.com/" class="proj-link" target="_blank">Visit site <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- FanFund -->
+    <div class="proj-card" data-cat="mobile">
+      <div class="proj-img">
+        <span class="proj-cat">Mobile</span>
+        <div class="carousel-wrap">
+          <div class="slide active"><img src="./gallery/fanfund.jpg" alt="FanFund Mobile Interface"></div>
+          <button class="c-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="c-next"><i class="fas fa-chevron-right"></i></button>
+          <div class="c-dots">
+            <button class="c-dot active"></button>
+          </div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-title">FanFund — Mobile-First Micro-Sponsorship</p>
+        <p class="proj-desc">Micro-crowdfunding and engagement engine that enables fans to sponsor local teams and creators. Integrates Africa's Talking USSD/SMS APIs for micro-payments using mobile money/airtime, and features Voice IVR locker-room updates.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Flask</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">USSD / SMS</span>
+          <span class="proj-tag">Voice IVR</span>
+          <span class="proj-tag">Mobile Money</span>
+        </div>
+        <a href="https://github.com/Juliet-ken22" class="proj-link" target="_blank">View GitHub <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
 
@@ -367,6 +436,61 @@
   </div>
 </div>
 
+    <!-- AfriAssist -->
+    <div class="proj-card" data-cat="ai">
+      <div class="proj-img">
+        <span class="proj-cat">AI / Web</span>
+        <div class="carousel-wrap">
+          <div class="slide active"><img src="./gallery/afriassist.jpg" alt="AfriAssist Multilingual Assistant"></div>
+          <button class="c-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="c-next"><i class="fas fa-chevron-right"></i></button>
+          <div class="c-dots">
+            <button class="c-dot active"></button>
+          </div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-title">AfriAssist — AI-Powered Multilingual Assistant</p>
+        <p class="proj-desc">SMS-based AI assistant for agriculture (crop advice), health, and learning. Translates and answers queries in 5 languages (Luganda, Swahili, Runyankole, Acholi, and English) using Django, OpenAI models, and the Africa's Talking SMS API.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Django</span>
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">SQLite</span>
+          <span class="proj-tag">OpenAI GPT</span>
+          <span class="proj-tag">SMS Gateway</span>
+          <span class="proj-tag">Localization</span>
+        </div>
+        <a href="https://github.com/Juliet-ken22" class="proj-link" target="_blank">View GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Pahappa Tech Hackathon -->
+    <div class="proj-card" data-cat="web">
+      <div class="proj-img">
+        <span class="proj-cat">Web / API</span>
+        <div class="carousel-wrap">
+          <div class="slide active"><img src="./gallery/pahappa.jpg" alt="Pahappa Tech SMS Utility"></div>
+          <button class="c-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="c-next"><i class="fas fa-chevron-right"></i></button>
+          <div class="c-dots">
+            <button class="c-dot active"></button>
+          </div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-title">Pahappa Tech Hackathon — SMS Validation Utility</p>
+        <p class="proj-desc">Developed a high-availability system validation and SMS delivery utility in 48 hours. Programmed input validation for Ugandan mobile numbers (+256) and formatted payloads for the Pahappa SMS gateway API to send instant event confirmations.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Requests</span>
+          <span class="proj-tag">REST APIs</span>
+          <span class="proj-tag">Input Validation</span>
+          <span class="proj-tag">SMS Gateway</span>
+        </div>
+        <a href="https://github.com/Juliet-ken22" class="proj-link" target="_blank">View GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
     <!-- Book Management -->
     <div class="proj-card" data-cat="web">
       <div class="proj-img">
@@ -421,7 +545,6 @@
       </div>
     </div>
 
-    <!-- Mobile App — coming soon -->
     <!-- Mobile App -->
 <div class="proj-card" data-cat="mobile">
   <div class="proj-img">
